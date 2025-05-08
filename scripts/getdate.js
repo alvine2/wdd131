@@ -1,31 +1,15 @@
-// getdates.js - Script to dynamically set dates in the footer
-// WDD 131 Assignment - Dynamic Web Fundamentals
+// Get the current year
+document.getElementById('currentyear').textContent = new Date().getFullYear();
 
-/**
- * Sets the current year in the copyright section
- */
-function setCurrentYear() {
-    const currentYear = new Date().getFullYear();
-    const yearElement = document.getElementById('currentyear');
-    if (yearElement) {
-        yearElement.textContent = currentYear;
-    }
-}
+// Get the last modified date
+const options = {
+    year: 'numeric',
+    month: '2-digit',
+    day: '2-digit',
+    hour: '2-digit',
+    minute: '2-digit',
+    second: '2-digit'
+};
 
-/**
- * Sets the last modified date of the document
- */
-function setLastModified() {
-    const lastModified = document.lastModified;
-    const modifiedElement = document.getElementById('lastModified');
-    if (modifiedElement) {
-        modifiedElement.textContent = `Last Modified: ${lastModified}`;
-    }
-}
-
-// Run both functions when the DOM is fully loaded
-document.addEventListener('DOMContentLoaded', () => {
-    setCurrentYear();
-    setLastModified();
-});
-//by alvine kinyera 
+const formattedDate = new Date(document.lastModified).toLocaleDateString('en-US', options);
+document.getElementById('lastModified').textContent = `Last Modification: ${formattedDate.replace(',', '')}`;
