@@ -1,0 +1,22 @@
+/* Large View Styles */
+#menu-button {
+    display: none;
+}
+
+#primary-nav {
+    display: block;
+}
+
+#primary-nav ul {
+    display: flex;
+}
+
+.gallery {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+@media (max-width: 1024px) {
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
