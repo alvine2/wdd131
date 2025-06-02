@@ -1,0 +1,424 @@
+/* CSS Variables for Color Schema */
+:root {
+    --oxford-blue: #0a1128;
+    --penn-blue: #001f54;
+    --indigo-dye: #034078;
+    --cerulean: #1282a2;
+    --white: #fefcfb;
+    --light-gray: #f5f5f5;
+    --medium-gray: #666;
+}
+
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Barlow", sans-serif;
+    line-height: 1.6;
+    color: var(--oxford-blue);
+    background-color: var(--white);
+    padding: 0;
+    margin: 0;
+}
+
+/* Header Styles */
+header {
+    background: linear-gradient(135deg, var(--oxford-blue), var(--penn-blue));
+    color: var(--white);
+    text-align: center;
+    padding: 3rem 2rem;
+    margin-bottom: 2rem;
+}
+
+header h1 {
+    font-family: "Lato", sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    opacity: 0.9;
+    font-weight: 400;
+}
+
+/* Main Content */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+/* Section Styles */
+.plan-section {
+    margin-bottom: 3rem;
+}
+
+.plan-section h2 {
+    font-family: "Lato", sans-serif;
+    font-size: 2rem;
+    color: var(--penn-blue);
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid var(--cerulean);
+}
+
+.content-card {
+    background: var(--white);
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.content-card h3 {
+    font-family: "Lato", sans-serif;
+    color: var(--indigo-dye);
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.content-card p {
+    margin-bottom: 1rem;
+    line-height: 1.7;
+}
+
+.content-card ul {
+    padding-left: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.content-card li {
+    margin-bottom: 0.8rem;
+}
+
+/* Scenario Styles */
+.scenario {
+    background: var(--light-gray);
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-radius: 6px;
+    border-left: 4px solid var(--cerulean);
+}
+
+.scenario h3 {
+    color: var(--penn-blue);
+    margin-bottom: 0.5rem;
+}
+
+.scenario em {
+    font-style: italic;
+    color: var(--medium-gray);
+    line-height: 1.6;
+}
+
+/* Color Palette Styles */
+.color-palette {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.color-item {
+    display: flex;
+    align-content: center;
+    gap: 1rem;
+    padding: 1rem;
+    background: #f9f9f9;
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+}
+
+.color-swatch {
+    width: 60px;
+    height: 60px;
+    border-radius: 8px;
+    border: 2px solid #ddd;
+    flex-shrink: 0;
+}
+
+.color-info {
+    flex: 1;
+}
+
+.color-info strong {
+    font-family: "Lato", sans-serif;
+    color: var(--oxford-blue);
+    display: block;
+    margin-bottom: 0.3rem;
+}
+
+.color-info code {
+    font-family: "Courier New", monospace;
+    background: #f0f0f0;
+    padding: 0.2rem 0.4rem;
+    border-radius: 3px;
+    font-size: 0.9rem;
+    display: block;
+    margin-bottom: 0.3rem;
+}
+
+.color-info small {
+    color: var(--medium-gray);
+    font-size: 0.9rem;
+}
+
+/* Color Swatch Classes */
+.oxford-blue { background-color: var(--oxford-blue); }
+.penn-blue { background-color: var(--penn-blue); }
+.indigo-dye { background-color: var(--indigo-dye); }
+.cerulean { background-color: var(--cerulean); }
+.white { 
+    background-color: var(--white); 
+    border: 2px solid #ccc;
+}
+
+/* Color Examples */
+.color-examples {
+    margin-top: 2rem;
+}
+
+.headerEx {
+    background: linear-gradient(135deg, var(--oxford-blue), var(--penn-blue));
+    color: var(--white);
+    padding: 1.5rem;
+    text-align: center;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    font-family: "Barlow", sans-serif;
+    font-weight: 600;
+}
+
+.bodyEx {
+    background: var(--white);
+    color: var(--oxford-blue);
+    padding: 1.5rem;
+    text-align: center;
+    border: 2px solid var(--indigo-dye);
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    font-family: "Barlow", sans-serif;
+}
+
+.footerEx {
+    background: var(--indigo-dye);
+    color: var(--white);
+    padding: 1.5rem;
+    text-align: center;
+    border-radius: 8px;
+    font-family: "Barlow", sans-serif;
+}
+
+/* Typography Styles */
+.typography-sample {
+    background: #f9f9f9;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-radius: 8px;
+    border-left: 4px solid var(--cerulean);
+}
+
+.font-example {
+    padding: 1rem;
+    background: var(--white);
+    border-radius: 6px;
+    margin-top: 1rem;
+    border: 1px solid #e0e0e0;
+}
+
+.lato-title h4 {
+    font-family: "Lato", sans-serif;
+    font-size: 1.8rem;
+    color: var(--penn-blue);
+    margin-bottom: 0.5rem;
+}
+
+.lato-body {
+    font-family: "Lato", sans-serif;
+    font-size: 1rem;
+}
+
+.barlow-text {
+    font-family: "Barlow", sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Typography Hierarchy */
+.typography-hierarchy {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background: #f5f5f5;
+    border-radius: 8px;
+}
+
+.hierarchy-example {
+    padding: 1rem;
+    background: var(--white);
+    border-radius: 6px;
+    border: 1px solid #e0e0e0;
+}
+
+.h1-example {
+    font-family: "Lato", sans-serif;
+    font-size: 2.5rem;
+    color: var(--oxford-blue);
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.h2-example {
+    font-family: "Lato", sans-serif;
+    font-size: 2rem;
+    color: var(--penn-blue);
+    margin-bottom: 0.8rem;
+    font-weight: 600;
+}
+
+.h3-example {
+    font-family: "Lato", sans-serif;
+    font-size: 1.5rem;
+    color: var(--indigo-dye);
+    margin-bottom: 0.6rem;
+    font-weight: 600;
+}
+
+.p-example {
+    font-family: "Barlow", sans-serif;
+    font-size: 1rem;
+    color: var(--oxford-blue);
+    line-height: 1.6;
+}
+
+/* Wireframe Styles */
+.wireframe-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.wireframe-section h3 {
+    color: var(--penn-blue);
+    margin-bottom: 1rem;
+    text-align: center;
+    font-family: "Lato", sans-serif;
+}
+
+.wireframe {
+    border: 2px solid var(--indigo-dye);
+    border-radius: 8px;
+    padding: 1rem;
+    background: #f9f9f9;
+    min-height: 600px;
+}
+
+.mobile-wireframe {
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.desktop-wireframe {
+    width: 100%;
+}
+
+.wireframe-element {
+    background: var(--white);
+    border: 1px dashed var(--cerulean);
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+    font-family: "Courier New", monospace;
+    font-size: 0.9rem;
+    color: var(--penn-blue);
+    border-radius: 4px;
+}
+
+.wireframe-notes {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background: var(--light-gray);
+    border-radius: 8px;
+}
+
+.wireframe-notes h3 {
+    color: var(--penn-blue);
+    margin-bottom: 1rem;
+    font-family: "Lato", sans-serif;
+}
+
+.wireframe-notes ul {
+    padding-left: 1.5rem;
+}
+
+.wireframe-notes li {
+    margin-bottom: 0.8rem;
+    color: var(--oxford-blue);
+}
+
+/* Footer */
+footer {
+    background: var(--oxford-blue);
+    color: var(--white);
+    text-align: center;
+    padding: 2rem;
+    margin-top: 4rem;
+    font-family: "Barlow", sans-serif;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+    
+    .subtitle {
+        font-size: 1rem;
+    }
+    
+    main {
+        padding: 0 1rem;
+    }
+    
+    .content-card {
+        padding: 1.5rem;
+    }
+    
+    .color-palette {
+        grid-template-columns: 1fr;
+    }
+    
+    .wireframe-container {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .color-item {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 2rem 1rem;
+    }
+    
+    header h1 {
+        font-size: 1.8rem;
+    }
+    
+    .plan-section h2 {
+        font-size: 1.5rem;
+    }
+    
+    .content-card {
+        padding: 1rem;
+    }
+}
