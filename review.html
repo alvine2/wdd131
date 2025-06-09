@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Confirmation | WDD 131</title>
+    <meta name="description" content="Thank you for submitting your product review">
+    <meta name="author" content="Kinyera Alvine">
+    <link rel="stylesheet" href="styles/review.css">
+</head>
+<body>
+    <header>
+        <h1>Review Submitted Successfully!</h1>
+        <p>Thank you for taking the time to share your feedback</p>
+    </header>
+
+    <main>
+        <div class="confirmation-container">
+            <div class="success-icon">
+                <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                    <polyline points="22,4 12,14.01 9,11.01"></polyline>
+                </svg>
+            </div>
+            
+            <h2>Your Review Has Been Received</h2>
+            <p class="confirmation-message">
+                We appreciate you taking the time to share your experience with our product. 
+                Your feedback helps us improve and helps other customers make informed decisions.
+            </p>
+            
+            <div class="review-summary" id="reviewSummary">
+            </div>
+            
+            <div class="review-counter">
+                <p>You have completed <strong id="reviewCount">0</strong> review(s) total.</p>
+            </div>
+            
+            <div class="action-buttons">
+                <a href="form.html" class="btn btn-primary">Submit Another Review</a>
+                <a href="#" class="btn btn-secondary">Return to Home</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy;<span id="currentyear">2025</span> - Kinyera Alvine - Uganda</p>
+    <p id="lastModified">Last Modified:</p>
+    </footer>
+
+    <script src="scripts/review.js"></script>
+</body>
+</html>
